@@ -1,3 +1,5 @@
+package atomicoperation;
+
 class Reorder {
 
     public static void main(String[] args) throws InterruptedException {
@@ -14,6 +16,8 @@ class Reorder {
         });
         thread1.start();
         thread2.start();
+
+        thread2.join();
     }
 }
 class SharedObject{
